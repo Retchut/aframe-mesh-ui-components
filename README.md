@@ -4,41 +4,37 @@
 
 These components utilize [Felix Mariotto](https://github.com/felixmariotto/)'s [three-mesh-ui](https://github.com/felixmariotto/three-mesh-ui) library under the hood, adapting it to components fit for use with A-Frame.
 
-# Quick Start
+# Import
 
-## Try it now
+## Module
 
-Give it a try in [this jsFiddle](https://jsfiddle.net/felixmariotto/y81rf5t2/44/)
-
-Using react-three-fiber ? Here is a [codesandbox](https://codesandbox.io/s/react-three-mesh-ui-forked-v7n0b?file=/src/index.js) to get started.
-
-## Import
-
-### JSM
-
-#### With NPM
+You can install the module by installing its corresponding npm package:
 
 `npm install aframe-mesh-ui-components`
 
-##### ES6
+You can then import it as an ES6 module or CommonJS:
 
 ```javascript
+// ES6
 import ThreeMeshUI from "aframe-mesh-ui-components";
-```
 
-##### CommonJS
-
-```javascript
+// CommonJS
 const ThreeMeshUI = require("aframe-mesh-ui-components");
 ```
 
-### HTML &lt;script&gt; tag
+## HTML &lt;script&gt; tag
+
+Alternatively, you can include a minified or development version of the package via a `<script>` tag in your html:
 
 ```html
-<!-- Make sure to include a-frame's latest build-->
+<!-- Make sure to also include a-frame's latest build ! -->
 <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 
-<script src="https://unpkg.com/aframe-mesh-ui-components@0.5.0/dist/main.js"></script>
+<!-- minified -->
+<script src="https://unpkg.com/aframe-mesh-ui-components@0.5.0/dist/aframe-mesh-ui.min.js"></script>
+
+<!-- development -->
+<script src="https://unpkg.com/aframe-mesh-ui-components@0.5.0/dist/aframe-mesh-ui.js"></script>
 ```
 
 # Usage
@@ -50,6 +46,10 @@ In order to display text from within the mesh-text component, a parent component
 The two font files used in the examples were taken from Felix Mariotto's [example assets](https://github.com/felixmariotto/three-mesh-ui/tree/master/examples/assets), and you can find their tutorial on how to create new fonts [here](https://github.com/felixmariotto/three-mesh-ui/wiki/Creating-your-own-fonts)
 
 ## Simple use case
+
+What follows is a very rudimentary and simple use case. More examples can be found inside the [examples folder](https://github.com/Retchut/aframe-mesh-ui-components/tree/main/examples).
+
+You can run these by cloning the repository and running the local development server.
 
 ### Code
 
@@ -99,6 +99,20 @@ It receives the exact same properties a ThreeMeshUI Block would.
 A `mesh-text` component is equivalent to a `ThreeMeshUI.Text` object.
 
 It receives the exact same properties a ThreeMeshUI Text would.
+
+# Scripts
+
+## Development server
+
+You can run a local development server by running the `npm start` command in the root of this project.
+
+## Build generation
+
+`npm run dist:min` - generates a minified build and its corresponding source map
+
+`npm run dist:max` - generates a development build and its corresponding source map
+
+`npm run dist` - generates both a minified and a development build and their corresponding source maps
 
 # TODO
 
