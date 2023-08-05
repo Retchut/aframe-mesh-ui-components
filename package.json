@@ -1,5 +1,5 @@
 {
-	"name": "aframe-mesh-ui",
+	"name": "aframe-mesh-ui-components",
 	"version": "0.5.0",
 	"description": "A simple port of felixmariotto's three-mesh-ui package for use in A-Frame's environment",
 	"main": "index.js",
