@@ -78,7 +78,7 @@ The two font files used in the examples were taken from Felix Mariotto's [exampl
 
 #### End result
 
-![Basic example](./examples/basic.png)
+![Basic example](./examples/images/basic.png)
 
 ### Components
 
