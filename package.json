@@ -7,7 +7,8 @@
 	"scripts": {
 		"dist": "npm run dist:min && npm run dist:max",
 		"dist:max": "webpack --mode=development",
-		"dist:min": "cross-env NODE_ENV=production webpack --mode=production"
+		"dist:min": "cross-env NODE_ENV=production webpack --mode=production",
+		"start": "cross-env NODE_ENV=production webpack serve"
 	},
 	"repository": {
 		"type": "git",
@@ -33,7 +34,8 @@
 	"devDependencies": {
 		"cross-env": "^7.0.3",
 		"webpack": "^5.88.2",
-		"webpack-cli": "^5.1.4"
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^4.15.1"
 	},
 	"dependencies": {
 		"three-mesh-ui": "^6.5.4"
