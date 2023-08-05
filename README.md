@@ -1,6 +1,6 @@
-# aframe-mesh-ui
+# aframe-mesh-ui-components
 
-**aframe-mesh-ui** is a set of A-Frame components which aid in creating VR UIs for building VR user interfaces.
+**aframe-mesh-ui-components** is a set of A-Frame components which aid in creating VR UIs for building VR user interfaces.
 
 These components utilize [Felix Mariotto](https://github.com/felixmariotto/)'s [three-mesh-ui](https://github.com/felixmariotto/three-mesh-ui) library under the hood, adapting it to components fit for use with A-Frame.
 
@@ -18,18 +18,18 @@ Using react-three-fiber ? Here is a [codesandbox](https://codesandbox.io/s/react
 
 #### With NPM
 
-`npm install aframe-mesh-ui`
+`npm install aframe-mesh-ui-components`
 
 ##### ES6
 
 ```javascript
-import ThreeMeshUI from "aframe-mesh-ui";
+import ThreeMeshUI from "aframe-mesh-ui-components";
 ```
 
 ##### CommonJS
 
 ```javascript
-const ThreeMeshUI = require("aframe-mesh-ui");
+const ThreeMeshUI = require("aframe-mesh-ui-components");
 ```
 
 ### HTML &lt;script&gt; tag
@@ -38,7 +38,7 @@ const ThreeMeshUI = require("aframe-mesh-ui");
 <!-- Make sure to include a-frame's latest build-->
 <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 
-<script src="https://unpkg.com/aframe-mesh-ui@0.5.0/dist/main.js"></script>
+<script src="https://unpkg.com/aframe-mesh-ui-components@0.5.0/dist/main.js"></script>
 ```
 
 # Usage
