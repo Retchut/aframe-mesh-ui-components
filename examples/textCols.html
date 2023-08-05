@@ -1,68 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic text column example</title>
-    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
-    <script type="module" src="../dist/main.js"></script>
-  </head>
-  <body>
-    <a-scene>
-      <a-sky color="#88c6eb"></a-sky>
-      <a-entity
-        look-controls
-        wasd-controls="acceleration:100"
-        position="0 3 0"
-      ></a-entity>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Basic text column example</title>
+		<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+		<script type="module" src="../dist/main.js"></script>
+	</head>
+	<body>
+		<a-scene>
+			<a-sky color="#88c6eb"></a-sky>
+			<a-entity
+				look-controls
+				wasd-controls="acceleration:100"
+				position="0 3 0"
+			></a-entity>
 
-      <a-entity position="0 3 -5" rotation="0 0 0" mesh-container
-      mesh-block="width: 5; height: 5; padding: 0.2; backgroundOpacity: 0.2;
+			<a-entity
+				position="0 3 -5"
+				rotation="0 0 0"
+				mesh-container
+				mesh-block="width: 5; height: 5; padding: 0.2; backgroundOpacity: 0.2;
       justifyContent: start; fontFamily: ./fonts/Roboto/Roboto-msdf.json;
-      fontTexture: ./fonts/Roboto/Roboto-msdf.png" >
-      <!-- Title block -->
-      <a-entity
-        mesh-block="width: 2; height: 1; margin: 0.025; justifyContent: center;"
-      >
-        <a-entity mesh-text="content: Main text"></a-entity>
-      </a-entity>
+      fontTexture: ./fonts/Roboto/Roboto-msdf.png"
+			>
+				<!-- Title block -->
+				<a-entity
+					mesh-block="width: 2; height: 1; margin: 0.025; justifyContent: center;"
+				>
+					<a-entity mesh-text="content: Main text"></a-entity>
+				</a-entity>
 
-      <!-- Content block -->
-      <a-entity
-        mesh-block="width: 1; height: 3; margin: 0.3; padding: 0.025; justifyContent: center; backgroundOpacity: 0"
-      >
-        <a-entity
-          mesh-block="contentDirection: row; padding: 0.2; margin: 0.025; backgroundOpacity: 0"
-        >
-          <!-- Left block -->
-          <a-entity
-            mesh-block="width: 1.5; height: 3; margin: 0.3; padding: 0.025; justifyContent: center; backgroundOpacity: 0"
-          >
-            <a-entity
-              mesh-block="width: 1.5; height: 3; margin: 0.05; padding: 0.1; justifyContent: center; textAlign: right"
-            >
-              <a-entity
-                mesh-text="content: This is a simple snippet of text that could be placed on the left-hand side column, as a description to an item on the scene, for example;"
-              >
-              </a-entity>
-            </a-entity>
-          </a-entity>
+				<!-- Content block -->
+				<a-entity
+					mesh-block="width: 1; height: 3; margin: 0.3; padding: 0.025; justifyContent: center; backgroundOpacity: 0"
+				>
+					<a-entity
+						mesh-block="contentDirection: row; padding: 0.2; margin: 0.025; backgroundOpacity: 0"
+					>
+						<!-- Left block -->
+						<a-entity
+							mesh-block="width: 1.5; height: 3; margin: 0.3; padding: 0.025; justifyContent: center; backgroundOpacity: 0"
+						>
+							<a-entity
+								mesh-block="width: 1.5; height: 3; margin: 0.05; padding: 0.1; justifyContent: center; textAlign: right"
+							>
+								<a-entity
+									mesh-text="content: This is a simple snippet of text that could be placed on the left-hand side column, as a description to an item on the scene, for example;"
+								>
+								</a-entity>
+							</a-entity>
+						</a-entity>
 
-          <!-- Right block -->
-          <a-entity
-            mesh-block="width: 1.5; height: 3; margin: 0.3; padding: 0.025; justifyContent: center; backgroundOpacity: 0"
-          >
-            <a-entity
-              mesh-block="width: 1.5; height: 3; margin: 0.05; padding: 0.1; justifyContent: center; textAlign: left"
-            >
-              <a-entity
-                mesh-text="content: More details could be provided on this other pannel, maybe with some extra detail"
-              >
-              </a-entity>
-            </a-entity>
-          </a-entity>
-        </a-entity>
-      </a-entity>
-    </a-scene>
-  </body>
+						<!-- Right block -->
+						<a-entity
+							mesh-block="width: 1.5; height: 3; margin: 0.3; padding: 0.025; justifyContent: center; backgroundOpacity: 0"
+						>
+							<a-entity
+								mesh-block="width: 1.5; height: 3; margin: 0.05; padding: 0.1; justifyContent: center; textAlign: left"
+							>
+								<a-entity
+									mesh-text="content: More details could be provided on this other pannel, maybe with some extra detail"
+								>
+								</a-entity>
+							</a-entity>
+						</a-entity>
+					</a-entity>
+				</a-entity>
+			</a-entity>
+		</a-scene>
+	</body>
 </html>

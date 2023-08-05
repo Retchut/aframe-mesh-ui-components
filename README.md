@@ -56,23 +56,23 @@ The two font files used in the examples were taken from Felix Mariotto's [exampl
 ```html
 <!-- You can mix and match the UI components and any other A-Frame component! -->
 <a-scene>
-  <a-entity
-    position="0 1.5 -1"
-    mesh-container
-    mesh-block="
-        width: 1;
-        height: 1;
-        fontFamily: ./fonts/Roboto/Roboto-msdf.json;
-        fontTexture: ./fonts/Roboto/Roboto-msdf.png;
-    "
-  >
-    <a-entity
-      mesh-text="
-        content: This is some text;
-        fontSize: 0.1
-    "
-    ></a-entity>
-  </a-entity>
+	<a-entity
+		position="0 1.5 -1"
+		mesh-container
+		mesh-block="
+			width: 1;
+			height: 1;
+			fontFamily: ./fonts/Roboto/Roboto-msdf.json;
+			fontTexture: ./fonts/Roboto/Roboto-msdf.png;
+		"
+	>
+		<a-entity
+			mesh-text="
+				content: This is some text;
+				fontSize: 0.1
+			"
+		></a-entity>
+	</a-entity>
 </a-scene>
 ```
 
