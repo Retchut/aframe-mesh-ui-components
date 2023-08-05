@@ -1,0 +1,41 @@
+{
+  "name": "aframe-mesh-ui",
+  "version": "0.5.0",
+  "description": "A simple port of felixmariotto's three-mesh-ui package for use in A-Frame's environment",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dist": "npm run dist:min && npm run dist:max",
+    "dist:max": "webpack --mode=development",
+    "dist:min": "cross-env NODE_ENV=production webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Retchut/aframe-mesh-ui.git"
+  },
+  "keywords": [
+    "aframe",
+    "aframe-component",
+    "aframe-vr",
+    "vr",
+    "webvr",
+    "webxr",
+    "three-mesh-ui",
+    "aframe-mesh-ui",
+    "aframe-ui"
+  ],
+  "author": "Mário Travassos <mariotravassosdev@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Retchut/aframe-mesh-ui/issues"
+  },
+  "homepage": "https://github.com/Retchut/aframe-mesh-ui#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "three-mesh-ui": "^6.5.4"
+  }
+}
